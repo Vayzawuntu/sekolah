@@ -38,7 +38,7 @@ require_once '../template/sidebar.php';
                         <thead class="table-light text-center">
                             <tr>
                                 <th>No Ujian</th>
-                                <th>NIS</th>
+                                <th>NIM</th>
                                 <th>Kelas</th>
                                 <th>Nilai Terendah</th>
                                 <th>Nilai Tertinggi</th>
