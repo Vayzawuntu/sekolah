@@ -1,0 +1,131 @@
+.col-4{
+    background-color: aqua;
+    margin-bottom: 200px;
+    margin-left: 1000px;
+    margin-top: -200;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;  /* dorong konten ke kanan */
+    align-items: center;        /* posisi vertikal tengah */
+    border: none;
+    height: 50px;
+    background-color: dodgerblue;
+    padding: 0 16px;           
+  }  
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+ }
+  
+ .side-menu {
+    position: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 0;
+    left: -250px; /* Sembunyi di luar layar dulu */
+    width: 200px;
+    height: 100%;
+    background-color: dodgerblue;
+    transition: left 0.1s ease;
+    padding-left: 10px;
+}
+
+/* Menu aktif */
+.side-menu.active {
+    left: 0; /* Muncul */
+}
+
+/* Styling link menu */
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    margin: 20px 0;
+}
+
+.side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.side-menu .dashboard {
+    background-color: white;
+    width: 190px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.side-menu .dashboard img {
+    width: 30px;
+    height: auto;
+    padding-left: 10px;
+}
+
+.side-menu .dashboard h3 {
+    color:dodgerblue;
+    margin: 0;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 210px;
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none; /* Biar tidak menghalangi klik kalau gak aktif */
+    transition: background-color 0.1s ease;
+    z-index: 5;
+}
+
+/* Ketika aktif */
+.overlay.active {
+    pointer-events: auto; /* Baru bisa diklik */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .image img {
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.header {
+    border: none;
+    background-color:dodgerblue;
+    height: 2px; 
+}
+
+.comp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+    height: auto;
+}
+
+.comp img {
+    width: 50px;
+    object-fit: cover;
+    display: block;
+}
+
+.judul h1 {
+    margin: 0;
+    font-size:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.judul{
+    text-align: center;
+}
